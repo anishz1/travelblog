@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+  --color-primary: #9900ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+  --color-black-2: #352f28cb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 70vh;
+}
+
+.banner-area {
+  background: linear-gradient(rgba(42, 0, 50, 0.5), rgba(42, 0, 50, 0.5)), url('img/s.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+body {
+  line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
+
+}
+
+.logo-img {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+
+.menu-bar {
+  /* background-color: pink; */
+
+  height: 80px;
+  width: 100%;
+  display: flex;
+  font-family: 'Cabin', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+}
+
+/* .logo{
+  display: flex;
+  align-items: center;
+} */
+
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.banner-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(240, 253, 255);
+  text-align: center;
+}
+
+.banner-txt h2 {
+  font-family: 'Iris Gover', cursive;
+  margin: 0;
+  font-size: 45px;
+  color: white;
+}
+
+.banner-txt a {
+  text-decoration: none;
+  border: 1px solid aliceblue;
+  padding: 10px 35px;
+  color: aliceblue;
+  display: inline-block;
+  margin-top: 5%;
+  font-family: 'cabin', sans-serif;
+  text-transform: uppercase;
+}
+
+.buttons {
+  transition: 0.5s;
+}
+
+.button1:hover {
+  transform: scale(1.1);
+}
+
+.button2:hover {
+  transform: scale(1.1);
+}
+
+.buttons .button1 {
+  background-color: rgb(82, 82, 233);
+  border-radius: 5px;
+}
+
+.buttons .button2 {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+main {
+  background-color: #fff;
+  min-height: 70%;
+}
+
+main h1 {
+  /* justify-content: center; */
+  margin: 9%;
+  text-align: center;
+}
+
+.section-container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-container .columns {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.section-container .columns.image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-container .columns.content .content-container {
+  padding: 40px 50px;
+}
+
+.section-container .columns.content .content-container h5 {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.section-container .columns.content .content-container p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+@media screen and (max-width:767px) {
+  .section-container {
+    flex-flow: row wrap;
+  }
+
+  .section-container .columns.image {
+    display: block;
+    order: 1;
+    width: 100%;
+    height: 250px;
+  }
+
+  .section-container .columns.content {
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+
+  .section-container .columns.content .content-container {
+    padding: 20px 35px;
+  }
+
+  .section-container .columns.content .content-container h5 {
+    margin-bottom: 5px;
+  }
+
+  .columns-image {
+    margin-left: 12%;
+  }
+
+  .heart {
+    justify-content: center;
+    text-align: center;
+  }
+
+  main button {
+    width: 112vw;
+    background-color: aqua;
+  }
+
+  footer {
+    background-color: gray;
+    height: 121vh;
+  }
+
+  .img-container {
+    display: flex;
+  }
+
+  /* slider */
+
+/* footer  */
